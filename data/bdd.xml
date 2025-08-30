@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <question>
+        <id>1</id>
+        <contenu>Quelle est la plus grande forêt tropicale du monde ?</contenu>
+        <response1>La forêt amazonienne</response1>
+        <response2>La forêt de Bornéo</response2>
+        <response3>La forêt du Congo</response3>
+        <response4>La forêt de Daintree</response4>
+        <thematique>terre</thematique>
+        <niveau>facile</niveau>
+        <bonne_reponse>1</bonne_reponse>
+    </question>
+    <question>
+        <id>2</id>
+        <contenu>Quel est l'océan le plus profond de la planète ?</contenu>
+        <response1>Océan Atlantique</response1>
+        <response2>Océan Indien</response2>
+        <response3>Océan Arctique</response3>
+        <bonne_reponse>4</bonne_reponse>
+        <thematique>mer</thematique>
+        <niveau>difficile</niveau>
+    </question>
+    <question>
+        <id>3</id>
+        <contenu>Le réchauffement climatique est principalement causé par :</contenu>
+        <response1>Les éruptions volcaniques</response1>
+        <response2>La déforestation</response2>
+        <response3>Les émissions de gaz à effet de serre</response3>
+        <bonne_reponse>3</bonne_reponse>
+        <thematique>air</thematique>
+        <niveau>difficile</niveau>
+    </question>
+    <question>
+        <id>4</id>
+        <contenu>Quel est le plus haut sommet du monde ?</contenu>
+        <response1>Mont Everest</response1>
+        <response2>K2</response2>
+        <response3>Mont Kilimandjaro</response3>
+        <bonne_reponse>1</bonne_reponse>
+        <thematique>air</thematique>
+        <niveau>facile</niveau>
+    </question>
+
+    <question>
+        <id>5</id>
+        <contenu>Quel est le pourcentage d'eau sur Terre ?</contenu>
+        <response1>0,75 %</response1>
+        <response2>0,65 %</response2>
+        <response3>0,6 % </response3>
+        <bonne_reponse>1</bonne_reponse>
+        <thematique>terre</thematique>
+        <niveau>normal</niveau>
+    </question>
+
+    <question>
+        <id>6</id>
+        <contenu>Combien existe-t-il d'océans dans le monde ?</contenu>
+        <response1>8</response1>
+        <response2>5</response2>
+        <response3>14 </response3>
+        <bonne_reponse>2</bonne_reponse>
+        <thematique>mer</thematique>
+        <niveau>facile</niveau>
+    </question>
+
+
+    <question>
+        <id>7</id>
+        <contenu> Quel est le surnom de la Terre ? </contenu>
+        <response1>La planète verte </response1>
+        <response2>La planète blanche</response2>
+        <response3>La planète bleue  </response3>
+        <bonne_reponse>2</bonne_reponse>
+        <thematique>terre</thematique>
+        <niveau>facile</niveau>
+    </question>
+
+    <question>
+        <id>8</id>
+        <contenu>Quel est le plus grand des animaux marins ?</contenu>
+        <response1>La baleine bleue</response1>
+        <response2>Le calamar géant </response2>
+        <response3>L'orque</response3>
+        <bonne_reponse>1</bonne_reponse>
+        <thematique>mer</thematique>
+        <niveau>normal</niveau>
+    </question>
+
+    <question>
+        <id>9</id>
+        <contenu>La couche d'air qui entoure la Terre s'appelle: </contenu>
+        <response1>l'atmosphère </response1>
+        <response2>la troposphère</response2>
+        <response3>la couche d'ozone</response3>
+        <bonne_reponse>3</bonne_reponse>
+        <thematique>air</thematique>
+        <niveau>normal</niveau>
+    </question>
+
+    <question>
+        <id>10</id>
+        <contenu> Que vaut la pression atmosphérique au niveau de la mer? </contenu>
+        <response1>1013 hPa  </response1>
+        <response2>101,3 hPa </response2>
+        <response3>1011,3 hPa </response3>
+        <bonne_reponse>1</bonne_reponse>
+        <thematique>air</thematique>
+        <niveau>difficile</niveau>
+    </question>
+
+    
+
+    
+</data>

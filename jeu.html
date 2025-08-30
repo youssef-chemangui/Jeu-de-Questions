@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeu de Questions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Jeu de Questions</h1>
+      <p class="text-center" id="niveauTitle"></p>
+
+      <table class="table table-striped" id="data">
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>Réponse 1</th>
+            <th>Réponse 2</th>
+            <th>Réponse 3</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const niveau = urlParams.get('niveau');
+
+        document.getElementById('niveauTitle').textContent = `Niveau : ${niveau}`;
+
+        loadXMLDoc(niveau);
+      });
+
+      function loadXMLDoc(niveau) {
+        let xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+          if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            fetchData(xmlhttp, niveau);
+          }
+        };
+        xmlhttp.open("GET", "https://obiwan.univ-brest.fr/~e22204613/DATA/bdd.xml", true);
+        xmlhttp.send();
+      }
+
+      function fetchData(xmlhttp, niveau) {
+        let xmlDoc = xmlhttp.responseXML;
+        let table = "";
+        let x = xmlDoc.getElementsByTagName("question");
+
+        for (let i = 0; i < x.length; i++) {
+          let niveauQuestion = x[i].getElementsByTagName("niveau")[0].textContent;
+          if (niveau === niveauQuestion) {
+            table += "<tr><td>" +
+              x[i].getElementsByTagName("contenu")[0].textContent +
+              "</td><td>" +
+              x[i].getElementsByTagName("response1")[0].textContent +
+              "</td><td>" +
+              x[i].getElementsByTagName("response2")[0].textContent +
+              "</td><td>" +
+              x[i].getElementsByTagName("response3")[0].textContent +
+              "</td></tr>";
+          }
+        }
+
+        document.getElementById("data").getElementsByTagName("tbody")[0].innerHTML = table;
+      }
+    </script>
+  </body>
+</html>

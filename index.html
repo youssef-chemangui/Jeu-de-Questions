@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeu de Questions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+    <div class="container mt-5">
+      <h1 class="text-center">Bienvenue dans le Jeu de Questions  :</h1>
+      <p class="text-center">Choisissez un niveau de difficulté pour commencer :</p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <select id="choixNiveau" class="form-select">
+            <option value="">Sélectionner un niveau</option>
+            <option value="facile">Facile</option>
+            <option value="normal">Normal</option>
+            <option value="difficile">Difficile</option>
+          </select>
+        </div>
+      </div>
+      <a href="apprendre.html" > si vous voulez s'entrainer avant de commencer,cliquez ici </a >
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <button class="btn btn-primary" onclick="demarrerJeu()">Commencer le jeu</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function demarrerJeu() {
+        let niveau = document.getElementById("choixNiveau").value;
+        if (niveau !== "") {
+          window.location.href = `jeu.html?niveau=${niveau}`;
+        } else {
+          alert("Veuillez sélectionner un niveau avant de commencer !");
+        }
+      }
+    </script>
+  </body>
+</html>
