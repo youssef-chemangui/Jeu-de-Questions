@@ -8,7 +8,7 @@ function loadXMLDoc() {
             displayById();
         }
     };
-    xmlhttp.open("GET", "https://obiwan.univ-brest.fr/~e22204613/DATA/bdd.xml", true);
+    xmlhttp.open("GET", "data/bdd.xml", true);
     xmlhttp.send();
 }
     function fetchData() {
