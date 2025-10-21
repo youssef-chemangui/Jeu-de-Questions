@@ -8,7 +8,7 @@ function loadXMLDoc() {
             displayById();
         }
     };
-    xmlhttp.open("GET", "data/bdd.xml", true);
+    xmlhttp.open("GET", "https://youssef-chemangui.github.io/Jeu-de-Questions/data/bdd.xml", true);
     xmlhttp.send();
 }
     function fetchData() {
